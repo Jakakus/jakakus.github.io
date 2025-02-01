@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Data Science Test Project</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; padding: 20px; max-width: 800px; }
+        h1, h2 { color: #333; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        img { max-width: 100%; height: auto; border: 1px solid #ddd; padding: 5px; }
+    </style>
+</head>
+<body>
+
+    <h1>📊 Python Data Science Test Project</h1>
+    <p>This project analyzes sales data using Python to generate insights. It includes a chart visualization and embedded code.</p>
+
+    <h2>📈 Visualization</h2>
+    <p>Below is a chart showing sales trends over time.</p>
+    <img src="sales_chart.png" alt="Sales Data Visualization">
+
+    <h2>📜 Python Code Used</h2>
+    <p>The following Python script was used to generate the chart:</p>
+
+    <pre>
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sample sales data
+data = {'Month': ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+        'Sales': [1000, 1200, 1300, 1250, 1400]}
+df = pd.DataFrame(data)
+
+# Create the plot
+plt.figure(figsize=(8, 5))
+plt.plot(df['Month'], df['Sales'], marker='o', linestyle='-')
+plt.title('Monthly Sales Trend')
+plt.xlabel('Month')
+plt.ylabel('Sales (€)')
+plt.grid(True)
+
+# Save the image
+plt.savefig('sales_chart.png')
+    </pre>
+
+    <p>🔗 <a href="../">Back to Portfolio</a></p>
+
+</body>
+</html>
 
